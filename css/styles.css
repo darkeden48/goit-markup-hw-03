@@ -1,0 +1,241 @@
+:root {
+    --background-color: #ffffff;
+    --background-footer: #2F303A;
+    --background-section-three: #F5F4FA;
+    --text-color: #212121;
+    --under-text-color: #757575;
+    --animation-links: #2196F3;
+    --animation-bottons: #2196F3;
+    --buttons-background: #F5F4FA;
+    --animation-button-focus:#ffffff;
+    --logo: #2196F3; 
+    --log:#ffffff;
+    --address:#ffffff;
+    --info:rgba(255, 255, 255, 0.6);
+    --shadow-title: #ffffff;
+    --background-hero: #2F303A;
+    --hero-color:#ffffff;
+    --hero-button-background:#2196F3;
+    --hero-button-color:#ffffff;
+
+}
+body{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: var(--text-color);
+    width: 1600px;
+ }
+ a {text-decoration: none}
+ ul{list-style: none}
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    ul,
+    p {margin: 0}
+    img{
+        display: block;
+    }
+.conteiner{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+ /* HEADER */
+ .header{
+     display:flex;
+     align-items: center;
+     margin-top: 40px;
+     margin-bottom: 40px;
+     
+    
+ }
+ .nav{
+     display:flex;
+     align-items: center;
+ }
+ .menu-list{
+     display: flex;
+
+ }
+ .item:not(:first-child) {
+     margin-left: 50px;
+}
+ .item:first-child{
+     margin-left: 93px;
+ }
+ .contacts-list{
+     display: flex;
+     margin-left: 331px;
+ }
+ .web, .studio{
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19; 
+    color: var(--text-color);
+}
+ .web{
+     color:var(--logo);
+ }
+ .menu-element{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    color:inherit;
+    padding-top: 32px;
+    padding-bottom: 32px;
+ }
+ .menu-element:focus, .menu-element:hover {
+     color:var(--animation-links);
+
+ }
+ .menu-element-active{
+     color: var(--animation-links);
+ }
+ .header-contact{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--under-text-color);}
+.header-contact:focus, .header-contact:hover {
+        color:var(--animation-links);
+
+}
+ /* FOOTER */
+.footer{
+    background-color: var(--background-footer);
+}
+ .studio-footer{
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--log);
+    
+ }
+.address{
+    font-style: normal; /*destroed italic */
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--log);
+}
+.info{
+    font-style: normal; /*destroed italic */
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--info);
+}
+.info:focus, .info:hover{
+    color:var(--animation-links);
+}
+
+ /* INDEX-MAIN */
+ /* hero-section */
+ .shadow-title{
+     color: var(--shadow-title);
+ }
+ .hero{
+     background-color: var(--background-hero);
+     color: var(--hero-color);
+ }
+ .hero-text{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+}
+ .hero-button{
+    font-family: inherit;
+     background-color: var(--hero-button-background);
+     color: var(--hero-button-color);
+     rgba (0, 0, 0, 0.15);
+     font-weight: bold;
+     font-size: 16px;
+     line-height: 1.87;
+     cursor:pointer;
+}
+/* section-one */
+.title-first{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+}
+.text-first{
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--under-text-color);
+}
+/* section-two */
+.second-title{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.16;
+}
+/* section-three */
+.section-three{
+background-color: var(--background-section-three);
+}
+.title-three{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.16;
+}
+.title-name{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+}
+.name-info{
+    font-size: 16px;
+    line-height: 1.18;
+    color: var(--under-text-color);
+}
+/* PORTFOLIO-MAIN */
+/* buttons */
+.portfolio-menu-item{
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    background-color: var(--buttons-background);
+    cursor:pointer;
+}
+.active{
+    background-color: var(--animation-bottons);
+    color: var(--animation-button-focus); 
+}
+.portfolio-menu-item:hover,
+.portfolio-menu-item:focus{
+    background-color: var(--animation-bottons);
+    color: var(--animation-button-focus);
+}
+/* portfolio */
+.portfolio-title{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    color: var(--text-color);
+    
+}
+.portfolio-text{
+    font-size: 16px;
+    line-height: 1.87;
+    color: var(--under-text-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
