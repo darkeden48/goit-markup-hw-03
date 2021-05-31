@@ -31,13 +31,14 @@ body{
     h1,
     h2,
     h3,
-    h4,
+    h4, 
     h5,
     h6,
     ul,
-    p {margin: 0}
+    p {margin: 0; padding: 0}
     img{
         display: block;
+        margin-right: 0;
     }
 .conteiner{
     width: 1200px;
@@ -180,6 +181,8 @@ body{
 .list-first{
     display: flex;
     letter-spacing: 0.03em;
+    padding-left: 0;
+    padding-right: 0;
 }
 .list-first .item-first{
     width: 270px;
@@ -203,7 +206,18 @@ body{
     font-weight: bold;
     font-size: 36px;
     line-height: 1.16;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
 }
+.second-list{
+    display: flex;
+    justify-content: space-around;
+}
+.second-list .img:not(:last-child){
+    margin-right: 30px;
+}
+
 /* section-three */
 .section-three{
 background-color: var(--background-section-three);
