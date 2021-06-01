@@ -17,6 +17,7 @@
     --hero-color:#ffffff;
     --hero-button-background:#2196F3;
     --hero-button-color:#ffffff;
+    --border-name:#ffffff;
 
 }
 body{
@@ -40,10 +41,12 @@ body{
         display: block;
         margin-right: 0;
     }
-.conteiner{
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+.conteiner  {
+    width: 1170px;
+    margin-left: 215px;
+    margin-right: 215px;
+    
+
     }
  /* HEADER */
  .header{
@@ -62,7 +65,7 @@ body{
  .item{
      padding-bottom: 32px;
      padding-top: 32px;
- }
+}
  .item:not(:first-child) {
      margin-left: 50px;
 }
@@ -82,14 +85,17 @@ body{
     font-size: 26px;
     line-height: 1.19; 
     color: var(--text-color);
+    letter-spacing: 0.03em;
 }
  .web{
      color:var(--logo);
+     letter-spacing: 0.03em;
  }
  .menu-element{
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
+    letter-spacing: 0.02em;
     color:inherit;
  }
  .menu-element:focus, .menu-element:hover {
@@ -103,6 +109,7 @@ body{
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
+    letter-spacing: 0.02em;
     color: var(--under-text-color);}
 .header-contact:focus, .header-contact:hover {
         color:var(--animation-links);
@@ -111,6 +118,13 @@ body{
  /* FOOTER */
 .footer{
     background-color: var(--background-footer);
+    margin-right: -200px;
+    margin-left: -200px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.card-footer{
+    margin-left: 415px;
 }
  .studio-footer{
     font-family: Raleway;
@@ -126,12 +140,17 @@ body{
     font-size: 14px;
     line-height: 1.71;
     color: var(--log);
+    margin-top: 20px;
+    margin-bottom: 9px;
 }
 .info{
     font-style: normal; /*destroed italic */
     font-size: 14px;
     line-height: 1.71;
     color: var(--info);
+}
+.footer-item{
+margin-top: 9px;
 }
 .info:focus, .info:hover{
     color:var(--animation-links);
@@ -152,6 +171,7 @@ body{
      display: flex;
      flex-direction: column;
      align-items: center;
+     width: 1600px;
      padding-top: 200px;
      padding-bottom: 200px;
      margin-left: -200px;
@@ -176,6 +196,7 @@ body{
      cursor:pointer;
      padding: 10px 32px 10px 32px;
      border-radius: 4px;
+     letter-spacing: 0.06em;
 }
 /* section-one */
 .list-first{
@@ -206,13 +227,13 @@ body{
     font-weight: bold;
     font-size: 36px;
     line-height: 1.16;
+    letter-spacing: 0.03em;
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
 }
 .second-list{
     display: flex;
-    justify-content: space-around;
 }
 .second-list .img:not(:last-child){
     margin-right: 30px;
@@ -220,7 +241,15 @@ body{
 
 /* section-three */
 .section-three{
-background-color: var(--background-section-three);
+background-color: var(--background-section-three);align-items: center;
+width: 1600px;
+margin-left: -200px;
+margin-right: -200px;
+}
+.card-three{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .title-three{
     font-weight: bold;
@@ -232,7 +261,6 @@ background-color: var(--background-section-three);
 }
 .names-list{
     display: flex;
-    justify-content: space-around;
 }
 .names-list .name:not(:last-child){
         margin-right: 30px;
@@ -241,11 +269,18 @@ background-color: var(--background-section-three);
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: var(--border-name);
+    padding-bottom: 30px;
 }
 .title-name{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
+    letter-spacing: 0.03em;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 .name-info{
     font-size: 16px;
