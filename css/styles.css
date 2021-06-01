@@ -226,6 +226,21 @@ background-color: var(--background-section-three);
     font-weight: bold;
     font-size: 36px;
     line-height: 1.16;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.names-list{
+    display: flex;
+    justify-content: space-around;
+}
+.names-list .name:not(:last-child){
+        margin-right: 30px;
+    }
+.name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .title-name{
     font-weight: 500;
