@@ -1,8 +1,10 @@
 :root {
+    --border-color:#eeeeee;
+    --border-color-header:#ECECEC;
     --background-color: #ffffff;
     --background-footer: #2F303A;
     --background-section-three: #F5F4FA;
-    --portfolio-background:#E5E5E5;
+    --portfolio-background:#ffffff;
     --text-color: #212121;
     --under-text-color: #757575;
     --animation-links: #2196F3;
@@ -48,9 +50,14 @@ body{
     margin: 0 auto;
     padding:0 15px;
 }
+.section{
+    padding-top: 94px ;
+    padding-bottom: 94px;
+}
  /* HEADER */
  .header{
     display:flex;
+    border-bottom: 1px solid var(--border-color-header);
     }
  .nav{
      display:flex;
@@ -150,12 +157,9 @@ margin-top: 9px;
 
  /* INDEX-MAIN */
  /* hero-section */
- .section{
-     padding-bottom: 94px;
-     padding-top: 94px;
- }
  .shadow-title{
-     color: var(--shadow-title);
+    color: var(--shadow-title);
+    margin-bottom: -30px;
  }
  .shadow-title-portfolio{
  color: var(--portfolio-background);
@@ -214,6 +218,9 @@ margin-top: 9px;
     color: var(--under-text-color);
 }
 /* section-two */
+.section-two{
+    padding-top: 0px;
+}
 .second-title{
     font-weight: bold;
     font-size: 36px;
@@ -285,13 +292,20 @@ background-color: var(--background-section-three);align-items: center;
     justify-content: center;
     padding-bottom: 56px;
 }
-.portfolio-menu-item{
+.portfolio-menu-item:not(:last-child){
+    margin-right: 8px;
+}
+
+.button-item{
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
-    background-color: var(--buttons-background);
     cursor:pointer;
+    letter-spacing: 0.03em;
+    background-color: var(--buttons-background);
+    padding: 6px 22px;
+    border:none;
 }
 .active{
     background-color: var(--animation-bottons);
@@ -317,19 +331,28 @@ flex-wrap: wrap;
 margin-right:30px;
 margin-bottom: 30px;
 }
-
-
+.portfolio-info{
+padding-top:
+border-left: 1px solid var(--border-color);
+border-bottom: 1px solid var(--border-color);
+border-right: 1px solid var(--border-color);
+}
 .portfolio-title{
     font-weight: bold;
     font-size: 18px;
     line-height: 2;
     color: var(--text-color);
+    margin-left: 24px;
+    margin-top: 20px;
+    margin-bottom: 4px;
     
 }
 .portfolio-text{
     font-size: 16px;
     line-height: 1.87;
     color: var(--under-text-color);
+    margin-left: 24px;
+    margin-bottom: 20px;
 }
 
 
