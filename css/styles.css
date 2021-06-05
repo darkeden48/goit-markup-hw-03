@@ -58,7 +58,7 @@ body{
  .header{
     display:flex;
     border-bottom: 1px solid var(--border-color-header);
-    }
+}
  .nav{
      display:flex;
      align-items: center;
@@ -89,6 +89,8 @@ body{
     line-height: 1.19; 
     color: var(--text-color);
     letter-spacing: 0.03em;
+    padding-bottom: 25px;
+    padding-top: 24px;
 }
  .web{
      color:var(--logo);
@@ -178,7 +180,8 @@ margin-top: 9px;
     line-height: 1.36;
     margin-bottom: 30px;
     display: flex;
-     justify-content: center;
+    text-align: center;
+    justify-content: center;
 }
  .hero-button{
     font-family: inherit;
@@ -194,6 +197,8 @@ margin-top: 9px;
      display: flex;
      justify-content: center;
      margin: auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
 /* section-one */
 .list-first{
@@ -287,6 +292,9 @@ background-color: var(--background-section-three);align-items: center;
 .portfolio{
     background-color:var(--portfolio-background);
 }
+.portfolio-menu-item{
+    border-radius: 4px;
+}
 .portfolio-menu-list{
     display: flex;
     justify-content: center;
@@ -295,7 +303,6 @@ background-color: var(--background-section-three);align-items: center;
 .portfolio-menu-item:not(:last-child){
     margin-right: 8px;
 }
-
 .button-item{
     font-family: inherit;
     font-weight: 500;
@@ -305,14 +312,15 @@ background-color: var(--background-section-three);align-items: center;
     letter-spacing: 0.03em;
     background-color: var(--buttons-background);
     padding: 6px 22px;
+    border-radius: 4px;
     border:none;
 }
 .active{
     background-color: var(--animation-bottons);
     color: var(--animation-button-focus); 
 }
-.portfolio-menu-item:hover,
-.portfolio-menu-item:focus{
+.button-item:hover,
+.button-item:focus{
     background-color: var(--animation-bottons);
     color: var(--animation-button-focus);
 }
@@ -332,7 +340,6 @@ margin-right:30px;
 margin-bottom: 30px;
 }
 .portfolio-info{
-padding-top:
 border-left: 1px solid var(--border-color);
 border-bottom: 1px solid var(--border-color);
 border-right: 1px solid var(--border-color);
@@ -343,9 +350,8 @@ border-right: 1px solid var(--border-color);
     line-height: 2;
     color: var(--text-color);
     margin-left: 24px;
-    margin-top: 20px;
+    padding-top: 20px;
     margin-bottom: 4px;
-    
 }
 .portfolio-text{
     font-size: 16px;
@@ -354,8 +360,6 @@ border-right: 1px solid var(--border-color);
     margin-left: 24px;
     margin-bottom: 20px;
 }
-
-
 
 
 
